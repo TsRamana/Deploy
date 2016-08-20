@@ -1,0 +1,13 @@
+case R.id.rateourapp:
+//https://play.google.com/store/apps/details?id=com.epainassist.homeremedies&hl=en
+                Uri uri1 = Uri.parse("market://details?id="+getPackageName());
+                Intent goToMarket1 = new Intent(Intent.ACTION_VIEW, uri1);
+                startActivity(goToMarket1);
+                return true;
+
+
+<item android:id="@+id/rateourapp"
+        android:orderInCategory="103"
+        android:title="Rate our App"
+        app:showAsAction="never"/>
+    
